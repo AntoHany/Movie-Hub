@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Description from './componant/Description';
+import FilmList from './componant/Filmlist';
+import Header from './componant/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Description heading={"Movie Hub"} desc={`
+        This site offers you advantages.
+        If you are a movie fan, 
+        you can know many details such as (screening period, 
+        release date, rating, cast, etc...) 
+        Reliable information from IMDB
+        `}/>
+        <FilmList />
+    </>
   );
 }
 

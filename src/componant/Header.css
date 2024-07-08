@@ -1,0 +1,45 @@
+.film-list{
+  position: relative;
+}
+.film-list ul{
+  display: block;
+  background-color: #f8f9faf0;
+  z-index: 1000;
+  width: 100%;
+  max-height: calc(100vb - 200px);
+  overflow-y: scroll;
+  list-style-type: none;
+  position: absolute;
+  width: 100%;
+}
+.film-list li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  cursor: pointer;
+}
+.film-list li:not(:last-child){
+  border-bottom: 1px solid black;
+}
+.film-list li .image{
+  padding: 2px;
+  background-color: brown;
+  border-radius: 5px;
+  box-shadow: 2px -2px 15px black;
+  margin-right: 20%;
+}
+.film-list li img{
+  border-radius: 5px;
+  width: 50px;
+}
+.film-list li .text{
+  width: fit-content;
+}
+.film-list li .text p{
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.film-list li .text span{
+  color: #777;
+}
