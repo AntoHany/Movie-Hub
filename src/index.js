@@ -8,7 +8,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import { FilmDetails } from './componant/FilmDetails.js';
 
-const url = '/https://antohany.github.io/Movie-Hub/'
+const url = "/https://antohany.github.io/Movie-Hub/"
 const router = createBrowserRouter([
   {
     path: url,
