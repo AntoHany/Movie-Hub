@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Film from "./Film";
 import './Film.css'
 import useFitchData from "../customHook/useFitchData";

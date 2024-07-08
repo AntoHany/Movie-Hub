@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './Header.css'
 
 function Header(){
@@ -57,22 +57,21 @@ function Header(){
     let warning = document.getElementById('warning').textContent = ''
     setFilmData([])
   }
-  const url = "/https://antohany.github.io/Movie-Hub/"
   return(
     <>
       <nav  className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid container">
-      <Link className="navbar-brand" to={url+"/"}>Movie Hub</Link>
+      <Link className="navbar-brand" to={"/"}>Movie Hub</Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span onClick={handleToggle} className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to={url+"/"}>Home</Link>
+            <Link className="nav-link active" aria-current="page" to={"/"}>Home</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to={url+"about"}>About</Link>
+            <Link className="nav-link" to={"/about"}>About</Link>
           </li>
         </ul>
         <form className="d-flex" role="search" onSubmit={handleSubmit}>
@@ -92,7 +91,7 @@ function Header(){
             <img src={"https://image.tmdb.org/t/p/w500"+f.poster_path} alt={f.title.slice(0,10)+'...'}/>
           </div>
           <div className="text">
-            <Link target="_blank" to={url+"film/"+f.id}>
+            <Link target="_blank" to={"/film/"+f.id}>
               <p>{f.title}</p>
             </Link>
             <span>{f.release_date}</span>

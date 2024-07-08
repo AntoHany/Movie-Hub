@@ -40,9 +40,9 @@ export function FilmDetails() {
         <span>raters count: {film.vote_count}</span>
         <span>language: {film.original_language}</span>
         
-        <a target="_blank" href={film.homepage}>Movie Home Page</a>
+        <a target="_blank" rel="noreferrer" href={film.homepage}>Movie Home Page</a>
         <br/>
-        <a className="imbd" target="_blank" href={"https://www.imdb.com/title/"+film.imdb_id}>IMDB</a>
+        <a className="imbd" rel="noreferrer" target="_blank" href={"https://www.imdb.com/title/"+film.imdb_id}>IMDB</a>
         </div>
     </div>
     </>
