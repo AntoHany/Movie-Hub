@@ -2,7 +2,7 @@
 
 ![App image](/public/movieHub.jpg)
 
-[Take A LOOK](https://duckduckgo.com). 
+[Take A LOOK](https://movies-hub-anton.vercel.app/). 
 
 ## app created for :-
 The movie site was created to try to fetch data through an API. It is a website created for the purpose of education. Through it, you can watch your favorite movies and know many data such as (release date, rating, showing duration...)
@@ -16,4 +16,4 @@ The movie site was created to try to fetch data through an API. It is a website 
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 
-[Take A LOOK](https://duckduckgo.com). 
+[Take A LOOK](https://movies-hub-anton.vercel.app/). 
