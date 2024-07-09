@@ -54,7 +54,10 @@ function Header(){
   }
 
   function handleToggle(){
-    let warning = document.getElementById('warning').textContent = ''
+    let warning = document.getElementById('warning')
+    if(warning){
+      warning.textContent = '';
+    }
     setFilmData([])
   }
   return(
@@ -62,8 +65,8 @@ function Header(){
       <nav  className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid container">
       <Link className="navbar-brand" to="/">Movie Hub</Link>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span onClick={handleToggle} className="navbar-toggler-icon"></span>
+      <button onClick={handleToggle} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
